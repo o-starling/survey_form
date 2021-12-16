@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>TravelWithUs Survey form</title>
+	<link rel="stylesheet" href="./styles.css">
+</head>
+
+<body>
+	<h1 id="title">TravelWithUs Survey form</h1>
+	<p id="description">Thank you for taking the time to help us improve the platform</p>
+	<form id="survey-form">
+		<div class="center">
+			<label for="name" id="name-label">Name</label><br>
+			<input class="input_size" id="name" placeholder="Your name" required></input><br>
+			<label for="email" id="email-label">Email</label><br>
+			<input class="input_size" type="email" id="email" placeholder="Your Email adress" required></input><br>
+
+			<label for="number" id="number-label">Number</label><br>
+			<input class="input_size" type="number" id="number" min="0" max="100"
+				placeholder="How old are You"></input><br>
+			<label for="recomend">Would you recommend TravelWithUs to a friend?</label><br>
+			<label>
+				<input type="radio" name="definitely-maybe-notsure" value="definitely">Definitely</input><br>
+				<input type="radio" name="definitely-maybe-notsure" value="maybe">Maybe</input><br>
+				<input type="radio" name="definitely-maybe-notsure" value="not_sure">Not sure</input><br>
+			</label>
+			<label for=feature>What is your favorite feature of TravelWithUs?</label><br>
+			<select class="dropdown_size" id="dropdown">
+				<option disabled selected value="select">Select an option</option>
+				<option value="community">Community</option>
+				<option value="information">Information</option>
+				<option vallue="journeys">Journeys</option>
+			</select><br>
+			<label for="improvement">What would You like to see on our page?</label><br>
+			<label for="stories"><input id="stories" type="checkbox" value="stories">Interesting
+				stories</input></label><br>
+			<label for="tips"><input id="tips" type="checkbox" value="tips">Travel tips</input></label><br>
+			<label for="hotels"><input id="hotels" type="checkbox" value="hotels">Hotels'
+				recomendations</input></label><br>
+			<label for="cars"><input id="cars" type="checkbox" value="cars">Car rentals</input></label><br>
+			<label for="places"><input id="places" type="checkbox" value="places">The most beautiful places in
+				Europe</input></label><br>
+			<label for="recomendations">Any comments or suggestions?</label><br>
+			<textarea id="recomendations" placeholder="Enter Your comment here..."></textarea><br>
+			<button id="submit" type="submit">Submit</button>
+		</div>
+	</form>
+</body>
+
+</html>
